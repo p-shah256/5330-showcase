@@ -1,3 +1,10 @@
+body {
+	margin-left: 0px;
+	margin-right:0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
 /* Styles for the mainWindow class */
 .mainWindow {
     padding: 10px;
@@ -14,9 +21,6 @@
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: calc(50% - 5px) calc(50% - 5px);
     gap: 10px;
-    grid-template-areas: 
-        "topL central topR"
-        "bottomL central bottomR";
 }
 
 /* Styles for grid items */
@@ -27,6 +31,22 @@
     justify-content: center;
     align-items: center;
     background-color: burlywood;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+		padding: 10px;
+}
+
+header h2 {
+    margin-right: auto; /* Pushes the heading to the right */
+}
+
+header .semesters {
+    display: flex; /* Ensures the semesters are aligned horizontally */
+		margin-right: 15px;
 }
 
 /* Individual grid item styles */
